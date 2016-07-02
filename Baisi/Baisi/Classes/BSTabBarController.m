@@ -7,9 +7,7 @@
 //
 
 #import "BSTabBarController.h"
-#define BSColorWithRGBA(R,G,B,A) [UIColor colorWithRed:(R)/255.0 green:(G)/255.0 blue:(B)/255.0 alpha:(A)]
-#define BSColorWithRGB(R,G,B) BSColorWithRGBA((R),(G),(B),1)
-#define BSRandomColor BSColorWithRGB(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+
 @interface BSTabBarController ()
 
 @end
