@@ -14,6 +14,7 @@
 		F91D263C1D24B436005120A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91D263B1D24B436005120A6 /* Assets.xcassets */; };
 		F91D264A1D24B436005120A6 /* BaisiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D26491D24B436005120A6 /* BaisiTests.m */; };
 		F91D26551D24B436005120A6 /* BaisiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D26541D24B436005120A6 /* BaisiUITests.m */; };
+		F9B5EDA31D27694200590A2E /* BSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B5EDA21D27694200590A2E /* BSTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		F91D26501D24B436005120A6 /* BaisiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaisiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F91D26541D24B436005120A6 /* BaisiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaisiUITests.m; sourceTree = "<group>"; };
 		F91D26561D24B436005120A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9B5EDA11D27694200590A2E /* BSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTabBarController.h; sourceTree = "<group>"; };
+		F9B5EDA21D27694200590A2E /* BSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 				F91D26361D24B436005120A6 /* ViewController.m */,
 				F91D26381D24B436005120A6 /* Main.storyboard */,
 				F91D26301D24B436005120A6 /* main.m */,
+				F9B5EDA11D27694200590A2E /* BSTabBarController.h */,
+				F9B5EDA21D27694200590A2E /* BSTabBarController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9B5EDA31D27694200590A2E /* BSTabBarController.m in Sources */,
 				F91D26371D24B436005120A6 /* ViewController.m in Sources */,
 				F91D26341D24B436005120A6 /* AppDelegate.m in Sources */,
 				F91D26311D24B436005120A6 /* main.m in Sources */,
@@ -498,6 +504,7 @@
 				F91D265B1D24B436005120A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F91D265C1D24B436005120A6 /* Build configuration list for PBXNativeTarget "BaisiTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +513,7 @@
 				F91D265E1D24B436005120A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F91D265F1D24B436005120A6 /* Build configuration list for PBXNativeTarget "BaisiUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +522,7 @@
 				F91D26611D24B436005120A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
