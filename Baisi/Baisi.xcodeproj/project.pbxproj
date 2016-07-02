@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		F91D26311D24B436005120A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D26301D24B436005120A6 /* main.m */; };
 		F91D26341D24B436005120A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D26331D24B436005120A6 /* AppDelegate.m */; };
-		F91D26371D24B436005120A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D26361D24B436005120A6 /* ViewController.m */; };
-		F91D263A1D24B436005120A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F91D26381D24B436005120A6 /* Main.storyboard */; };
 		F91D263C1D24B436005120A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91D263B1D24B436005120A6 /* Assets.xcassets */; };
 		F91D264A1D24B436005120A6 /* BaisiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D26491D24B436005120A6 /* BaisiTests.m */; };
 		F91D26551D24B436005120A6 /* BaisiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D26541D24B436005120A6 /* BaisiUITests.m */; };
@@ -39,9 +37,6 @@
 		F91D26301D24B436005120A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
 		F91D26321D24B436005120A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
 		F91D26331D24B436005120A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
-		F91D26351D24B436005120A6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
-		F91D26361D24B436005120A6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
-		F91D26391D24B436005120A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F91D263B1D24B436005120A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F91D26401D24B436005120A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F91D26451D24B436005120A6 /* BaisiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaisiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,9 +137,6 @@
 			children = (
 				F91D26321D24B436005120A6 /* AppDelegate.h */,
 				F91D26331D24B436005120A6 /* AppDelegate.m */,
-				F91D26351D24B436005120A6 /* ViewController.h */,
-				F91D26361D24B436005120A6 /* ViewController.m */,
-				F91D26381D24B436005120A6 /* Main.storyboard */,
 				F91D26301D24B436005120A6 /* main.m */,
 				F9B5EDA11D27694200590A2E /* BSTabBarController.h */,
 				F9B5EDA21D27694200590A2E /* BSTabBarController.m */,
@@ -257,7 +249,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F91D263C1D24B436005120A6 /* Assets.xcassets in Resources */,
-				F91D263A1D24B436005120A6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +274,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9B5EDA31D27694200590A2E /* BSTabBarController.m in Sources */,
-				F91D26371D24B436005120A6 /* ViewController.m in Sources */,
 				F91D26341D24B436005120A6 /* AppDelegate.m in Sources */,
 				F91D26311D24B436005120A6 /* main.m in Sources */,
 			);
@@ -319,18 +309,6 @@
 			targetProxy = F91D26511D24B436005120A6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F91D26381D24B436005120A6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F91D26391D24B436005120A6 /* Base */,
-			);
-			name = Main.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F91D26571D24B436005120A6 /* Debug */ = {

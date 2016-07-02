@@ -22,6 +22,8 @@
 #define BSLog(...)
 #endif
 
+#define BSLogFunc BSLog(@"%s", __func__);
+
 /*** 颜色 ***/
 #define BSColorWithRGBA(R,G,B,A) [UIColor colorWithRed:(R)/255.0 green:(G)/255.0 blue:(B)/255.0 alpha:(A)]
 #define BSColorWithRGB(R,G,B) BSColorWithRGBA((R),(G),(B),1)
