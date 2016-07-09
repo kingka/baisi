@@ -8,6 +8,10 @@
 
 #import "BSTabBarController.h"
 #import "BSTabBar.h"
+#import "BSEssenceViewController.h"
+#import "BSNewViewController.h"
+#import "BSFollowViewController.h"
+#import "BSMeViewController.h"
 
 @interface BSTabBarController ()
 
@@ -23,21 +27,21 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    UIViewController *v1 = [[UIViewController alloc]init];
-    UIViewController *v2 = [[UIViewController alloc]init];
-    UIViewController *v3 = [[UIViewController alloc]init];
-    UIViewController *v4 = [[UIViewController alloc]init];
+    UIViewController *v1 = [[BSEssenceViewController alloc]init];
+    UIViewController *v2 = [[BSNewViewController alloc]init];
+    UIViewController *v3 = [[BSFollowViewController alloc]init];
+    UIViewController *v4 = [[BSMeViewController alloc]init];
     
-    UIViewController *vc = [[UIViewController alloc]init];
+    
 
-    [self setupController:v1 withTitle:@"精华" imageName:@"tabBar_essence_icon" selectedImageName:@"tabBar_essence_click_icon"];
-    [self setupController:v2 withTitle:@"新帖" imageName:@"tabBar_new_icon" selectedImageName:@"tabBar_new_click_icon"];
+    [self setupController:[[UINavigationController alloc] initWithRootViewController:v1] withTitle:@"精华" imageName:@"tabBar_essence_icon" selectedImageName:@"tabBar_essence_click_icon"];
+    [self setupController:[[UINavigationController alloc] initWithRootViewController:v2] withTitle:@"新帖" imageName:@"tabBar_new_icon" selectedImageName:@"tabBar_new_click_icon"];
     
     //占位VC
    // [self setupController:vc withTitle:nil imageName:nil selectedImageName:nil];
     
-    [self setupController:v3 withTitle:@"关注" imageName:@"tabBar_friendTrends_icon" selectedImageName:@"tabBar_friendTrends_click_icon"];
-    [self setupController:v4 withTitle:@"我" imageName:@"tabBar_me_icon" selectedImageName:@"tabBar_me_click_icon"];
+    [self setupController:[[UINavigationController alloc] initWithRootViewController:v3] withTitle:@"关注" imageName:@"tabBar_friendTrends_icon" selectedImageName:@"tabBar_friendTrends_click_icon"];
+    [self setupController:[[UINavigationController alloc] initWithRootViewController:v4] withTitle:@"我" imageName:@"tabBar_me_icon" selectedImageName:@"tabBar_me_click_icon"];
     
     //更换自定义tabbar
     [self setValue:[[BSTabBar alloc]init] forKeyPath:@"tabBar"];

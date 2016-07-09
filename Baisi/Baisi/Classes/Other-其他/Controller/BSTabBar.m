@@ -19,8 +19,8 @@
 -(void)layoutSubviews{
     [super layoutSubviews];
     int index = 0 ;
-    int width = self.frame.size.width/5;
-    int height = self.frame.size.height;
+    int width = self.bs_width/5;
+    int height = self.bs_height;
     for (UIView *view in self.subviews){
         
         // 过滤掉非UITabBarButton
@@ -39,7 +39,7 @@
     [self addSubview:self.publishButton];
     
     _publishButton.frame = CGRectMake(0, 0, width, height);
-    _publishButton.center = CGPointMake(self.frame.size.width * 0.5, self.frame.size.height * 0.5);
+    _publishButton.center = CGPointMake(self.bs_width * 0.5, self.bs_height * 0.5);
 
 }
 
