@@ -12,6 +12,7 @@
 		F91D263C1D24B436005120A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91D263B1D24B436005120A6 /* Assets.xcassets */; };
 		F91D264A1D24B436005120A6 /* BaisiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D26491D24B436005120A6 /* BaisiTests.m */; };
 		F91D26551D24B436005120A6 /* BaisiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D26541D24B436005120A6 /* BaisiUITests.m */; };
+		F98B78CA1D30D11E00883137 /* BSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F98B78C91D30D11E00883137 /* BSTabBar.m */; };
 		F9B5EDA31D27694200590A2E /* BSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B5EDA21D27694200590A2E /* BSTabBarController.m */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,8 @@
 		F91D26501D24B436005120A6 /* BaisiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaisiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F91D26541D24B436005120A6 /* BaisiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaisiUITests.m; sourceTree = "<group>"; };
 		F91D26561D24B436005120A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F98B78C81D30D11E00883137 /* BSTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTabBar.h; sourceTree = "<group>"; };
+		F98B78C91D30D11E00883137 /* BSTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTabBar.m; sourceTree = "<group>"; };
 		F9B5EDA11D27694200590A2E /* BSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTabBarController.h; sourceTree = "<group>"; };
 		F9B5EDA21D27694200590A2E /* BSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTabBarController.m; sourceTree = "<group>"; };
 		F9B5EDA41D27717700590A2E /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 				F91D26301D24B436005120A6 /* main.m */,
 				F9B5EDA11D27694200590A2E /* BSTabBarController.h */,
 				F9B5EDA21D27694200590A2E /* BSTabBarController.m */,
+				F98B78C81D30D11E00883137 /* BSTabBar.h */,
+				F98B78C91D30D11E00883137 /* BSTabBar.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 			files = (
 				F9B5EDA31D27694200590A2E /* BSTabBarController.m in Sources */,
 				F91D26341D24B436005120A6 /* AppDelegate.m in Sources */,
+				F98B78CA1D30D11E00883137 /* BSTabBar.m in Sources */,
 				F91D26311D24B436005120A6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
