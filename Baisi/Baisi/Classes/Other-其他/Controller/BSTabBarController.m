@@ -12,6 +12,7 @@
 #import "BSNewViewController.h"
 #import "BSFollowViewController.h"
 #import "BSMeViewController.h"
+#import "BSNavigationController.h"
 
 @interface BSTabBarController ()
 
@@ -19,36 +20,36 @@
 
 @implementation BSTabBarController
 
-
-
-
-
-
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    UIViewController *v1 = [[BSEssenceViewController alloc]init];
-    UIViewController *v2 = [[BSNewViewController alloc]init];
-    UIViewController *v3 = [[BSFollowViewController alloc]init];
-    UIViewController *v4 = [[BSMeViewController alloc]init];
     
+    [self setupChildsViewController];
     
+    [self setupCustomTabBar];
+    
+    [self setupItemTitleTextAttributes];
+}
 
-    [self setupController:[[UINavigationController alloc] initWithRootViewController:v1] withTitle:@"精华" imageName:@"tabBar_essence_icon" selectedImageName:@"tabBar_essence_click_icon"];
-    [self setupController:[[UINavigationController alloc] initWithRootViewController:v2] withTitle:@"新帖" imageName:@"tabBar_new_icon" selectedImageName:@"tabBar_new_click_icon"];
-    
-    //占位VC
-   // [self setupController:vc withTitle:nil imageName:nil selectedImageName:nil];
-    
-    [self setupController:[[UINavigationController alloc] initWithRootViewController:v3] withTitle:@"关注" imageName:@"tabBar_friendTrends_icon" selectedImageName:@"tabBar_friendTrends_click_icon"];
-    [self setupController:[[UINavigationController alloc] initWithRootViewController:v4] withTitle:@"我" imageName:@"tabBar_me_icon" selectedImageName:@"tabBar_me_click_icon"];
-    
+-(void)setupCustomTabBar{
     //更换自定义tabbar
     [self setValue:[[BSTabBar alloc]init] forKeyPath:@"tabBar"];
 }
 
+-(void)setupChildsViewController{
+    UIViewController *v1 = [[BSEssenceViewController alloc]init];
+    UIViewController *v2 = [[BSNewViewController alloc]init];
+    UIViewController *v3 = [[BSFollowViewController alloc]init];
+    UIViewController *v4 = [[BSMeViewController alloc]init];
+
+    [self setupController:[[BSNavigationController alloc] initWithRootViewController:v1] withTitle:@"精华" imageName:@"tabBar_essence_icon" selectedImageName:@"tabBar_essence_click_icon"];
+    [self setupController:[[BSNavigationController alloc] initWithRootViewController:v2] withTitle:@"新帖" imageName:@"tabBar_new_icon" selectedImageName:@"tabBar_new_click_icon"];
+    [self setupController:[[BSNavigationController alloc] initWithRootViewController:v3] withTitle:@"关注" imageName:@"tabBar_friendTrends_icon" selectedImageName:@"tabBar_friendTrends_click_icon"];
+    [self setupController:[[BSNavigationController alloc] initWithRootViewController:v4] withTitle:@"我" imageName:@"tabBar_me_icon" selectedImageName:@"tabBar_me_click_icon"];
+}
+
 -(void)setupController:(UIViewController*)VC withTitle:(NSString*)title imageName:(NSString*)imageName selectedImageName:(NSString *)selectedImageName{
-    [VC.view setBackgroundColor:BSRandomColor];
+    
     VC.tabBarItem.title = title;
     if(imageName.length>0){
         VC.tabBarItem.image = [UIImage imageNamed:imageName];
@@ -58,6 +59,23 @@
     }
     
     [self addChildViewController:VC];
+}
+
+/**
+ *  设置所有UITabBarItem的文字属性
+ */
+- (void)setupItemTitleTextAttributes
+{
+    UITabBarItem *item = [UITabBarItem appearance];
+    // 普通状态下的文字属性
+    NSMutableDictionary *normalAttrs = [NSMutableDictionary dictionary];
+    normalAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:14];
+    normalAttrs[NSForegroundColorAttributeName] = [UIColor grayColor];
+    [item setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
+    // 选中状态下的文字属性
+    NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
+    selectedAttrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
+    [item setTitleTextAttributes:normalAttrs forState:UIControlStateSelected];
 }
 
 

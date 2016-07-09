@@ -7,6 +7,7 @@
 //
 
 #import "BSMeViewController.h"
+#import "BSSettingViewController.h"
 
 @interface BSMeViewController ()
 
@@ -16,15 +17,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = BSCommonColor;
     self.navigationItem.title = @"我";
+    // 右边-设置
+    UIBarButtonItem *settingItem = [UIBarButtonItem itemWithImage:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:self action:@selector(settingClick)];
+    // 右边-月亮
+    UIBarButtonItem *moonItem = [UIBarButtonItem itemWithImage:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:self action:@selector(moonClick)];
+    self.navigationItem.rightBarButtonItems = @[settingItem, moonItem];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)settingClick
+{
+    BSSettingViewController *vc = [[BSSettingViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (void)moonClick
+{
+    BSLogFunc
+}
 /*
 #pragma mark - Navigation
 

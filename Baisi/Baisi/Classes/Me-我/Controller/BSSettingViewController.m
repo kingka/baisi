@@ -1,32 +1,29 @@
 //
-//  BSNewViewController.m
+//  BSSettingViewController.m
 //  Baisi
 //
 //  Created by Imanol on 16/7/9.
 //  Copyright © 2016年 imanol. All rights reserved.
 //
 
-#import "BSNewViewController.h"
+#import "BSSettingViewController.h"
 
-@interface BSNewViewController ()
+@interface BSSettingViewController ()
 
 @end
 
-@implementation BSNewViewController
+@implementation BSSettingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    //如果不设置背景颜色，push 进来的时候会黑色，且看起来卡顿；
     self.view.backgroundColor = BSCommonColor;
-    self.navigationItem.title = @"新帖";
-    // 标题
-    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
-    // 左边
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" highImage:@"MainTagSubIconClick" target:self action:@selector(tagClick)];
 }
 
-- (void)tagClick
-{
-    BSLogFunc
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 /*

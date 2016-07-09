@@ -7,6 +7,7 @@
 //
 
 #import "BSFollowViewController.h"
+#import "BSRecommandFollowViewController.h"
 
 @interface BSFollowViewController ()
 
@@ -16,13 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = BSCommonColor;
     self.navigationItem.title = @"关注";
+    // 左边
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(followClick)];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)followClick
+{
+    BSRecommandFollowViewController *vc = [[BSRecommandFollowViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 /*

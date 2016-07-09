@@ -16,6 +16,7 @@
 #ifdef __OBJC__
 
 #import "UIView+BSExtension.h"
+#import "UIBarButtonItem+BSExtension.h"
 
 /*** 日志 ***/
 #ifdef DEBUG
@@ -29,6 +30,7 @@
 /*** 颜色 ***/
 #define BSColorWithRGBA(R,G,B,A) [UIColor colorWithRed:(R)/255.0 green:(G)/255.0 blue:(B)/255.0 alpha:(A)]
 #define BSColorWithRGB(R,G,B) BSColorWithRGBA((R),(G),(B),1)
+#define BSCommonColor BSColorWithRGB(233,233,233)
 #define BSRandomColor BSColorWithRGB(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
 
 #endif
