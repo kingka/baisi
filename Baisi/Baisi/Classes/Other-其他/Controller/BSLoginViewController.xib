@@ -92,17 +92,51 @@
                         </mask>
                     </variation>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZhY-u1-pDJ" userLabel="顶部">
+                    <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VB-jU-iQX">
+                            <rect key="frame" x="241" y="4" width="75" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75" id="DEJ-kl-Ecv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="注册账号"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="scw-YV-KBq">
+                            <rect key="frame" x="4" y="4" width="69" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="69" id="edK-7O-WKh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" image="login_close_icon"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="6VB-jU-iQX" firstAttribute="top" secondItem="ZhY-u1-pDJ" secondAttribute="top" constant="4" id="1Ss-Uo-BcT"/>
+                        <constraint firstAttribute="bottom" secondItem="6VB-jU-iQX" secondAttribute="bottom" constant="4" id="7x8-Pi-7DH"/>
+                        <constraint firstAttribute="height" constant="44" id="USy-BJ-NMP"/>
+                        <constraint firstAttribute="trailing" secondItem="6VB-jU-iQX" secondAttribute="trailing" constant="4" id="Xmp-Gn-OqY"/>
+                        <constraint firstItem="scw-YV-KBq" firstAttribute="leading" secondItem="ZhY-u1-pDJ" secondAttribute="leading" constant="4" id="aZz-aE-xN8"/>
+                        <constraint firstItem="scw-YV-KBq" firstAttribute="top" secondItem="ZhY-u1-pDJ" secondAttribute="top" constant="4" id="lhU-Nb-V01"/>
+                        <constraint firstAttribute="bottom" secondItem="scw-YV-KBq" secondAttribute="bottom" constant="4" id="vFx-Lr-3Cm"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="ZhY-u1-pDJ" secondAttribute="trailing" id="3L7-29-q3E"/>
                 <constraint firstItem="ers-UJ-tBd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3pp-D2-Te8"/>
                 <constraint firstItem="KYM-Ff-LIS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4s3-6Z-EKb"/>
+                <constraint firstItem="ZhY-u1-pDJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Bpw-dD-xm8"/>
                 <constraint firstAttribute="bottom" secondItem="KYM-Ff-LIS" secondAttribute="bottom" id="F3F-SO-bgn"/>
                 <constraint firstAttribute="bottom" secondItem="ers-UJ-tBd" secondAttribute="bottom" constant="20" id="GnT-iP-pUp"/>
                 <constraint firstItem="KYM-Ff-LIS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LsL-mZ-6da"/>
                 <constraint firstAttribute="trailing" secondItem="KYM-Ff-LIS" secondAttribute="trailing" id="M1p-54-opy"/>
                 <constraint firstAttribute="trailing" secondItem="ers-UJ-tBd" secondAttribute="trailing" id="ZU2-XU-qAE"/>
                 <constraint firstAttribute="bottom" secondItem="ers-UJ-tBd" secondAttribute="bottom" constant="20" id="vW4-f8-9R7"/>
+                <constraint firstItem="ZhY-u1-pDJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xa3-fZ-Y8n"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <variation key="default">
@@ -113,6 +147,7 @@
         </view>
     </objects>
     <resources>
+        <image name="login_close_icon" width="16" height="16"/>
         <image name="login_register_background" width="320" height="568"/>
         <image name="login_register_left_line" width="103" height="1"/>
         <image name="login_register_right_line" width="103" height="1"/>
