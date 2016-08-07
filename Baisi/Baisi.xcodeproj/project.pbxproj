@@ -12,6 +12,10 @@
 		F91D263C1D24B436005120A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91D263B1D24B436005120A6 /* Assets.xcassets */; };
 		F91D264A1D24B436005120A6 /* BaisiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D26491D24B436005120A6 /* BaisiTests.m */; };
 		F91D26551D24B436005120A6 /* BaisiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D26541D24B436005120A6 /* BaisiUITests.m */; };
+		F95CEC951D56E78A007A8368 /* BSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CEC931D56E78A007A8368 /* BSLoginViewController.m */; };
+		F95CEC961D56E78A007A8368 /* BSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F95CEC941D56E78A007A8368 /* BSLoginViewController.xib */; };
+		F95CEC991D56EA4D007A8368 /* BSQuickLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F95CEC981D56EA4D007A8368 /* BSQuickLoginButton.m */; };
+		F95CEC9B1D56EFFB007A8368 /* BSFollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F95CEC9A1D56EFFB007A8368 /* BSFollowViewController.xib */; };
 		F98B78E81D30EE2D00883137 /* UIView+BSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F98B78E11D30EE2D00883137 /* UIView+BSExtension.m */; };
 		F98B78E91D30EE2D00883137 /* BSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F98B78E41D30EE2D00883137 /* BSTabBar.m */; };
 		F98B78EA1D30EE2D00883137 /* BSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98B78E61D30EE2D00883137 /* BSTabBarController.m */; };
@@ -55,6 +59,12 @@
 		F91D26501D24B436005120A6 /* BaisiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaisiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F91D26541D24B436005120A6 /* BaisiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaisiUITests.m; sourceTree = "<group>"; };
 		F91D26561D24B436005120A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F95CEC921D56E78A007A8368 /* BSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSLoginViewController.h; sourceTree = "<group>"; };
+		F95CEC931D56E78A007A8368 /* BSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSLoginViewController.m; sourceTree = "<group>"; };
+		F95CEC941D56E78A007A8368 /* BSLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSLoginViewController.xib; sourceTree = "<group>"; };
+		F95CEC971D56EA4D007A8368 /* BSQuickLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSQuickLoginButton.h; sourceTree = "<group>"; };
+		F95CEC981D56EA4D007A8368 /* BSQuickLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSQuickLoginButton.m; sourceTree = "<group>"; };
+		F95CEC9A1D56EFFB007A8368 /* BSFollowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BSFollowViewController.xib; sourceTree = "<group>"; };
 		F98B78E01D30EE2D00883137 /* UIView+BSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BSExtension.h"; sourceTree = "<group>"; };
 		F98B78E11D30EE2D00883137 /* UIView+BSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BSExtension.m"; sourceTree = "<group>"; };
 		F98B78E31D30EE2D00883137 /* BSTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTabBar.h; sourceTree = "<group>"; };
@@ -224,6 +234,7 @@
 				F9945D2F1D30EF1E00AECDAF /* BSFollowViewController.m */,
 				F9B7407D1D3100E8002AF894 /* BSRecommandFollowViewController.h */,
 				F9B7407E1D3100E8002AF894 /* BSRecommandFollowViewController.m */,
+				F95CEC9A1D56EFFB007A8368 /* BSFollowViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -343,6 +354,9 @@
 				F98B78E61D30EE2D00883137 /* BSTabBarController.m */,
 				F9945D3A1D30F43B00AECDAF /* BSNavigationController.h */,
 				F9945D3B1D30F43B00AECDAF /* BSNavigationController.m */,
+				F95CEC921D56E78A007A8368 /* BSLoginViewController.h */,
+				F95CEC931D56E78A007A8368 /* BSLoginViewController.m */,
+				F95CEC941D56E78A007A8368 /* BSLoginViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -350,6 +364,8 @@
 		F98B78E71D30EE2D00883137 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F95CEC971D56EA4D007A8368 /* BSQuickLoginButton.h */,
+				F95CEC981D56EA4D007A8368 /* BSQuickLoginButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -459,6 +475,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F91D263C1D24B436005120A6 /* Assets.xcassets in Resources */,
+				F95CEC9B1D56EFFB007A8368 /* BSFollowViewController.xib in Resources */,
+				F95CEC961D56E78A007A8368 /* BSLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,11 +503,13 @@
 			files = (
 				F91D26341D24B436005120A6 /* AppDelegate.m in Sources */,
 				F9945D391D30F1E800AECDAF /* UIBarButtonItem+BSExtension.m in Sources */,
+				F95CEC991D56EA4D007A8368 /* BSQuickLoginButton.m in Sources */,
 				F9B7407F1D3100E8002AF894 /* BSRecommandFollowViewController.m in Sources */,
 				F9945D3C1D30F43B00AECDAF /* BSNavigationController.m in Sources */,
 				F98B78EA1D30EE2D00883137 /* BSTabBarController.m in Sources */,
 				F9945D2D1D30EF0F00AECDAF /* BSEssenceViewController.m in Sources */,
 				F9945D301D30EF1E00AECDAF /* BSFollowViewController.m in Sources */,
+				F95CEC951D56E78A007A8368 /* BSLoginViewController.m in Sources */,
 				F9945D361D30EF3F00AECDAF /* BSNewViewController.m in Sources */,
 				F91D26311D24B436005120A6 /* main.m in Sources */,
 				F9945D331D30EF3000AECDAF /* BSMeViewController.m in Sources */,
