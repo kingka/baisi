@@ -9,6 +9,8 @@
 #import "BSLoginViewController.h"
 
 @interface BSLoginViewController ()
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *registerTraining;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *loginLeading;
 
 @end
 
@@ -24,14 +26,27 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)registerAction:(UIButton*)button {
+    // 退出键盘
+    [self.view endEditing:YES];
+    
+    // 设置约束 和 按钮状态
+    if (_loginLeading.constant) { // 目前显示的是注册界面, 点击按钮后要切换为登录界面
+        _loginLeading.constant = 0;
+        button.selected = NO;
+    } else { // 目前显示的是登录界面, 点击按钮后要切换为注册界面
+        _loginLeading.constant = - self.view.bs_width;
+        button.selected = YES;
+    }
+
+    // 动画
+    [UIView animateWithDuration:0.25 animations:^{
+        // 强制刷新 : 让最新设置的约束值马上应用到UI控件上
+        // 会刷新到self.view内部的所有子控件
+        [self.view layoutIfNeeded];
+    }];
+
 }
-*/
 
 @end
