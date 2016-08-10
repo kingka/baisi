@@ -115,6 +115,9 @@
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <state key="normal" image="login_close_icon"/>
+                            <connections>
+                                <action selector="closeAction:" destination="-1" eventType="touchUpInside" id="Zq2-SK-nki"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -215,7 +218,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="Jm7-XP-odq"/>
                             </constraints>
-                            <state key="normal" title="登录" backgroundImage="login_register_button"/>
+                            <state key="normal" title="注册" backgroundImage="login_register_button"/>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

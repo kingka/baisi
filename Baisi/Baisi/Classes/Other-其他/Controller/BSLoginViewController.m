@@ -25,6 +25,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)closeAction:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 - (IBAction)registerAction:(UIButton*)button {
@@ -35,9 +38,11 @@
     if (_loginLeading.constant) { // 目前显示的是注册界面, 点击按钮后要切换为登录界面
         _loginLeading.constant = 0;
         button.selected = NO;
+        [button setTitle:@"注册账号" forState:UIControlStateNormal];
     } else { // 目前显示的是登录界面, 点击按钮后要切换为注册界面
         _loginLeading.constant = - self.view.bs_width;
         button.selected = YES;
+        [button setTitle:@"返回登录" forState:UIControlStateNormal];
     }
 
     // 动画
