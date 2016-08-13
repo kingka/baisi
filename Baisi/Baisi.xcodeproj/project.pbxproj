@@ -19,6 +19,7 @@
 		F98B78E81D30EE2D00883137 /* UIView+BSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F98B78E11D30EE2D00883137 /* UIView+BSExtension.m */; };
 		F98B78E91D30EE2D00883137 /* BSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F98B78E41D30EE2D00883137 /* BSTabBar.m */; };
 		F98B78EA1D30EE2D00883137 /* BSTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98B78E61D30EE2D00883137 /* BSTabBarController.m */; };
+		F98F92831D5EDC8D00F76CED /* BSRegisterField.m in Sources */ = {isa = PBXBuildFile; fileRef = F98F92821D5EDC8D00F76CED /* BSRegisterField.m */; };
 		F9945D2D1D30EF0F00AECDAF /* BSEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9945D2C1D30EF0F00AECDAF /* BSEssenceViewController.m */; };
 		F9945D301D30EF1E00AECDAF /* BSFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9945D2F1D30EF1E00AECDAF /* BSFollowViewController.m */; };
 		F9945D331D30EF3000AECDAF /* BSMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9945D321D30EF3000AECDAF /* BSMeViewController.m */; };
@@ -71,6 +72,8 @@
 		F98B78E41D30EE2D00883137 /* BSTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTabBar.m; sourceTree = "<group>"; };
 		F98B78E51D30EE2D00883137 /* BSTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTabBarController.h; sourceTree = "<group>"; };
 		F98B78E61D30EE2D00883137 /* BSTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSTabBarController.m; sourceTree = "<group>"; };
+		F98F92811D5EDC8D00F76CED /* BSRegisterField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSRegisterField.h; sourceTree = "<group>"; };
+		F98F92821D5EDC8D00F76CED /* BSRegisterField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSRegisterField.m; sourceTree = "<group>"; };
 		F9945D2B1D30EF0F00AECDAF /* BSEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSEssenceViewController.h; sourceTree = "<group>"; };
 		F9945D2C1D30EF0F00AECDAF /* BSEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSEssenceViewController.m; sourceTree = "<group>"; };
 		F9945D2E1D30EF1E00AECDAF /* BSFollowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSFollowViewController.h; sourceTree = "<group>"; };
@@ -366,6 +369,8 @@
 			children = (
 				F95CEC971D56EA4D007A8368 /* BSQuickLoginButton.h */,
 				F95CEC981D56EA4D007A8368 /* BSQuickLoginButton.m */,
+				F98F92811D5EDC8D00F76CED /* BSRegisterField.h */,
+				F98F92821D5EDC8D00F76CED /* BSRegisterField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -511,6 +516,7 @@
 				F9945D301D30EF1E00AECDAF /* BSFollowViewController.m in Sources */,
 				F95CEC951D56E78A007A8368 /* BSLoginViewController.m in Sources */,
 				F9945D361D30EF3F00AECDAF /* BSNewViewController.m in Sources */,
+				F98F92831D5EDC8D00F76CED /* BSRegisterField.m in Sources */,
 				F91D26311D24B436005120A6 /* main.m in Sources */,
 				F9945D331D30EF3000AECDAF /* BSMeViewController.m in Sources */,
 				F98B78E91D30EE2D00883137 /* BSTabBar.m in Sources */,
